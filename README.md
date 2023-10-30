@@ -29,8 +29,46 @@ Para comenzar a hacer nuestro análisis y ver la diferencia entre los distintos 
 # Análisis de los archivos más importantes
 La solución propuesta en el curso nos presenta un documento de datos el cual usa el algoritmo para ejecutar las etapas de la transferencia de calor, el código setup.c existe una funcion llamada inicializate en donde parte de las tareas de esta, es verificar si hay un checkponit de los datos sobre los cuales se ha ejecutado el algoritmo y continua a partir de estos, por esto cada que se ejecuta el  heat_mpi se generan imágenes nuevas con un notorio cambio de temperatura en el mapa de calor. El algoritmo de core. C es una extensión de setup pero este se centra en las estructuras principales para resolver la ecuación de calor.
 
+# Compilación
+
+Existen dos maneras de compilar: la forma activa y la forma pasiva.
+
+**Activa:** 
+Es el modo de ejecución donde no se usan banderas de optimización 
+````
+gcc -o ejecutable archivo_fuente.c -fopenmp -O3
+````
+
+Donde:
+- -fopenmp: Habilita el soporte para OpenMP.
+- -O3: Habilita el nivel máximo de optimización. Es posible hacer uso de otras banderas según sea necesario (por ejemplo, -O2, -O1, ... ).
+
+**Pasiva:**
+En este modo no se hacen optimizaciones
+ ````
+gcc -o ejecutable archivo_fuente.c -fopenmp -O0
+````
+
+Donde: 
+- O0: Deshabilita todas las optimizaciones.
+
+# Ejecutar
+A la hora de ejecutar, es necesario estar posicionado en el directorio donde se encuentran los .ejecutables generados en la compilación, una vez dentro de este. Se llama al ejecutable.
+
+ ````
+./ejecutable
+````
+
+
+Todas las instrucciones de compilación y ejecución están contenidas en el archivo make.
+Este archivo es posible ejecutarlo desde la terminal. Simplemente estando en el directorio que lo contiene e invocarlo por el nombre correspondiente
+ ````
+make
+````
+
 # Cambios realizados al main.c y su estructura
 Se identifica que el archivo que más influye en los tiempos de ejecución, es main.c, es por esto que se deciden hacer ciertas modificaciones de las cuáles se irá viendo su estructura y su respectiva explicación de cada parte:
+
 
 1. Inclusión de Bibliotecas:
 ````
