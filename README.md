@@ -12,4 +12,5 @@ Para comenzar a hacer nuestro análisis y ver la diferencia entre los distintos 
 ![](imgs/Archivos.png)
 
 **Archivos luego de hacer "make"**
+![](imgs/Archivos post make.png)
 
