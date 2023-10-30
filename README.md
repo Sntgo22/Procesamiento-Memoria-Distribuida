@@ -29,7 +29,7 @@ Para comenzar a hacer nuestro análisis y ver la diferencia entre los distintos 
 # Análisis de los archivos más importantes
 La solución propuesta en el curso nos presenta un documento de datos el cual usa el algoritmo para ejecutar las etapas de la transferencia de calor, el código setup.c existe una funcion llamada inicializate en donde parte de las tareas de esta, es verificar si hay un checkponit de los datos sobre los cuales se ha ejecutado el algoritmo y continua a partir de estos, por esto cada que se ejecuta el  heat_mpi se generan imágenes nuevas con un notorio cambio de temperatura en el mapa de calor. El algoritmo de core. C es una extensión de setup pero este se centra en las estructuras principales para resolver la ecuación de calor.
 
-# Cambios realizados al main.c
+# Cambios realizados al main.c y su estructura
 Se identifica que el archivo que más influye en los tiempos de ejecución, es main.c, es por esto que se deciden hacer ciertas modificaciones de las cuáles se irá viendo su estructura y su respectiva explicación de cada parte:
 
 1. Inclusión de Bibliotecas:
@@ -119,5 +119,6 @@ MPI_Finalize();
 ````
 Se imprimen estadísticas, como el tiempo total de ejecución, y se finaliza la ejecución, liberando recursos y cerrando MPI.
 
+# Resultados obtenidos
 
 
