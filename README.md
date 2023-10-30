@@ -55,12 +55,14 @@ double dx2, dy2;            // Deltas al cuadrado en x e y
 double start_clock;         // Marca de tiempo inicial
 ````
 Se declaran variables para almacenar parámetros del problema, información sobre la malla y el tiempo, así como estructuras de datos para almacenar los campos de temperatura actual y anterior. También se declaran variables relacionadas con la paralelización y contadores de iteración.
+
 3. Inicialización MPI y del Problema:
 ````
 MPI_Init(&argc, &argv);
 initialize(argc, argv, &current, &previous, &nsteps, &parallelization, &iter0);
 ````
 Se inicializa MPI y se lleva a cabo la inicialización del problema, configurando la distribución de trabajo entre los procesos MPI y estableciendo las condiciones iniciales.
+
 4. Cálculos Preliminares:
 ````
 int rank = parallelization.rank;
@@ -69,12 +71,14 @@ int local_nsteps = nsteps / size;
 int extra_nsteps = nsteps % size;
 ````
 Se realizan cálculos previos relacionados con la distribución del trabajo entre los procesos MPI.
+
 5. Salida Inicial de Campo de Temperatura:
 ````
 write_field(&current, iter0, &parallelization);
 iter0++;
 ````
 Se genera la salida inicial del campo de temperatura.
+
 6. Cálculos para el Paso de Tiempo:
 ````
 dx2 = current.dx * current.dx;
@@ -83,6 +87,7 @@ double inv_denom = 1.0 / (2.0 * a * (dx2 + dy2));
 dt = dx2 * dy2 * inv_denom;
 ````
 Se calculan los valores necesarios para el paso de tiempo, considerando la estabilidad numérica de la solución.
+
 7. Evolución Temporal:
 ````
 for (iter = iter0; iter < iter0 + local_nsteps + (rank < extra_nsteps ? 1 : 0); iter++) {
@@ -90,6 +95,7 @@ for (iter = iter0; iter < iter0 + local_nsteps + (rank < extra_nsteps ? 1 : 0); 
 }
 ````
 Se realiza la evolución temporal del sistema, distribuyendo el trabajo entre los procesos MPI. Se intercambian datos entre procesos para garantizar la coherencia en los bordes de las regiones locales.
+
 8. Salida de Resultados y Checkpoints:
 ````
 if (iter % image_interval == 0) {
@@ -100,6 +106,7 @@ if (iter % restart_interval == 0) {
 }
 ````
 Se generan salidas visuales en intervalos regulares y se guardan checkpoints para permitir la reanudación de la simulación.
+
 9. Estadísticas y Finalización:
 ````
 if (rank == 0) {
