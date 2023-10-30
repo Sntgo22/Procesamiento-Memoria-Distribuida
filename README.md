@@ -8,22 +8,22 @@
 
 Para comenzar a hacer nuestro análisis y ver la diferencia entre los distintos métodos de optimización, lo primero que haremos será partir con unos valores de ejecución base, los cuáles se obtuvieron por medio del código suministrado para el ejercicio sin aplicar modificaciones previas.
 
-**Archvios previos a hacer "make"**
+- **Archvios previos a hacer "make"**
 ![](imgs/Archivos.png)
 
-**Archivos luego de hacer "make"**
+- **Archivos luego de hacer "make"**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/Archivos%20post%20make.png)
 
-**Se ejecuta mpirun -np 4 heat_mpi**
+- **Se ejecuta mpirun -np 4 heat_mpi**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/1.png)
 
-**Se ejecuta mpirun -np 4 heat_mpi bottle.dat**
+- **Se ejecuta mpirun -np 4 heat_mpi bottle.dat**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/2.png)
 
-**Se ejecuta mpirun -np 4 heat_mpi bottle.dat 1000 (pasos de tiempo)**
+- **Se ejecuta mpirun -np 4 heat_mpi bottle.dat 1000 (pasos de tiempo)**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/3.png)
 
-**Se ejecuta mpirun -np 4 heat_mpi 800 800 1000 (dimensiones y pasos de tiempo)**
+- **Se ejecuta mpirun -np 4 heat_mpi 800 800 1000 (dimensiones y pasos de tiempo)**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/4.png)
 
 
