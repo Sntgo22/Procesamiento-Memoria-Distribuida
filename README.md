@@ -8,4 +8,8 @@
 
 Para comenzar a hacer nuestro análisis y ver la diferencia entre los distintos métodos de optimización, lo primero que haremos será partir con unos valores de ejecución base, los cuáles se obtuvieron por medio del código suministrado para el ejercicio sin aplicar modificaciones previas.
 
+**Archvios previos a hacer "make"**
+![](imgs/Archivos.png)
+
+**Archivos luego de hacer "make"**
 
