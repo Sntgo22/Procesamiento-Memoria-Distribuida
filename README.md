@@ -12,5 +12,5 @@ Para comenzar a hacer nuestro análisis y ver la diferencia entre los distintos 
 ![](imgs/Archivos.png)
 
 **Archivos luego de hacer "make"**
-![](imgs/Archivos post make.png)
+![]((https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/Archivos%20post%20make.png)https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/Archivos%20post%20make.png)
 
