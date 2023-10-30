@@ -123,11 +123,11 @@ Se imprimen estadísticas, como el tiempo total de ejecución, y se finaliza la 
 
 Luego de modificar el Makeme y probar los distintos métodos de optimización, podemos llegar a ver como cada uno de estos obtiene métricas diferentes para cada uno:
 
-- **O1**
+- **Para el caso de O1**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-01.png)
-- **O2**
+- **Para el caso de O2**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-02.png)
-- **O3**
+- **Para el caso de O3**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-03.png)
-- **Ofast**
+- **Para el caso de Ofast**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-0fast%20.png)
