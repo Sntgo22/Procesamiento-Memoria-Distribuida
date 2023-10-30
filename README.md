@@ -125,9 +125,12 @@ Luego de modificar el Makeme y probar los distintos métodos de optimización, p
 
 - **Para el caso de O1**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-01.png)
+
 - **Para el caso de O2**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-02.png)
+
 - **Para el caso de O3**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-03.png)
+
 - **Para el caso de Ofast**
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-0fast%20.png)
