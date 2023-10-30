@@ -119,6 +119,15 @@ MPI_Finalize();
 ````
 Se imprimen estadísticas, como el tiempo total de ejecución, y se finaliza la ejecución, liberando recursos y cerrando MPI.
 
-# Resultados obtenidos
+# Resultados obtenidos usando -O1, -O2, -03, -Ofast
 
+Luego de modificar el Makeme y probar los distintos métodos de optimización, podemos llegar a ver como cada uno de estos obtiene métricas diferentes para cada uno:
 
+-O1
+![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-01.png)
+-O2
+![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-02.png)
+-O3
+![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-03.png)
+-Ofast
+![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-0fast%20.png)
