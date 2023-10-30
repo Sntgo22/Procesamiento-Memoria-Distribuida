@@ -1,3 +1,6 @@
+//Se ha modificado este código por Santiago Bolaños y Sebastián Anaya
+//La solución fue inspirada por medio de los recursos administrados de PRACE
+
 /* Heat equation solver in 2D. */
 
 #include <stdio.h>
