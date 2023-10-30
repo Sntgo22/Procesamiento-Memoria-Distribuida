@@ -138,3 +138,8 @@ Luego de modificar el Makeme y probar los distintos métodos de optimización, p
 - **Para el caso de Ofast**
 
 ![](https://github.com/Sntgo22/Procesamiento-Memoria-Distribuida/blob/main/imgs/usando%20-0fast%20.png)
+
+
+# Conclusiones
+
+Podemos ver que a partir de la modificación del código de main.c se obtienen resultados mucho más óptimos y con una diferencia notoria, sin embargo, se pueden obtener resultados un poco mejores usando el método de optimización -Ofast, ya que gracias a los resultados vistos se puede concluir que es el más óptimo de los que han sido probados previamente, a su vez teniendo como los peores métodos el -O1 y el -O2, ya que a pesar de que sus resultados no son malos, son los que dieron peor rendimiento.
