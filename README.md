@@ -121,7 +121,7 @@ Se imprimen estadísticas, como el tiempo total de ejecución, y se finaliza la 
 
 # Resultados obtenidos usando -O1, -O2, -03, -Ofast
 
-Luego de modificar el Makeme y probar los distintos métodos de optimización, podemos llegar a ver como cada uno de estos obtiene métricas diferentes para cada uno:
+Luego de modificar el Makeme y probar los distintos métodos de optimización, podemos llegar a ver como cada uno de estos obtiene métricas diferentes, cabe destacar que todos estos resultados son obtenidos a partir del comando de **-mpirun -np 4 heat_mpi 800 800 1000**:
 
 - **Para el caso de O1**
 
